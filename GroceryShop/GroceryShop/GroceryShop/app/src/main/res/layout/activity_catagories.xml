@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_menu_24" />
+
+        <SearchView
+            android:id="@+id/searchView"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-35dp"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:ems="10"
+
+            android:gravity="center"
+            android:queryHint="Browse all categories"
+            android:iconifiedByDefault="false"
+            android:layout_alignParentTop="true"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv1"
+            android:divider="#ad5"
+            android:dividerHeight="2dp"
+            android:layout_below="@+id/searchView"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/Cartt"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/cartpic"
+
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fruits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fruits" />
+
+            <ImageView
+                android:id="@+id/vegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/vegetable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/meat"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/meat" />
+
+            <ImageView
+                android:id="@+id/fish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/fish" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/oil"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/edibleoil" />
+
+            <ImageView
+                android:id="@+id/milk"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/milk" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rice"
+                android:layout_width="204dp"
+                android:layout_height="260dp"
+                app:srcCompat="@drawable/rice" />
+
+            <ImageView
+                android:id="@+id/onion"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/onion" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cleaner"
+                android:layout_width="203dp"
+                android:layout_height="244dp"
+                app:srcCompat="@drawable/cleaner" />
+
+            <ImageView
+                android:id="@+id/ghee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ghee" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

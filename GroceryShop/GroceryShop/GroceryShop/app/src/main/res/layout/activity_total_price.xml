@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/receiptsimple"
+    tools:context=".Receipt">
+
+    <ImageView
+        android:id="@+id/Pdfbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/baseline_picture_as_pdf_24" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="195dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/grocerymainlogosimple"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME : "
+        android:layout_below="@id/textView26"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="80dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Address_easy_grocery"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView14"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:text="Warehouse:137/c,F block,Gulshan,Dhaka-1219\nRegistered Tax-id:000098450-31971" />
+
+    <TextView
+        android:id="@+id/ADRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_alignBaseline="@id/textView26"
+        android:layout_below="@+id/textView24"
+        android:text=" " />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ADRESS"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/textView27"
+
+        android:text="Username from firebase" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Receipt"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Address_easy_grocery"
+        />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="........................................................."
+        android:textSize="20dp"
+        android:layout_below="@id/textView22"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="........................................................."
+        android:textSize="20dp"
+        android:layout_below="@+id/textView125"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Cautious"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/thanks"
+        android:layout_marginTop="10dp"
+        android:text="Purchase of defected item must be notified before 24 hours with invoice (online/physical)
+\nFor any queries , suggestion or complaints
+Please call 01971984503( 3PM-10PM)"
+        android:textSize="10dp"
+
+
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+
+        android:text="THANK YOU! \n For shopping with EASY GROCERY"
+        android:textSize="10dp"
+
+        android:layout_marginTop="600dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="80dp"
+        android:text="Cart SubTotal     : " />
+
+    <TextView
+        android:id="@+id/cart_sub_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@id/text"
+        android:layout_toRightOf="@id/text"
+        android:textSize="20dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text"
+        android:layout_marginLeft="80dp"
+        android:text="Vat                        : " />
+
+    <TextView
+        android:id="@+id/vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@id/textView23"
+        android:layout_toRightOf="@id/textView23"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView28"
+        android:layout_marginLeft="80dp"
+        android:text="Total Amount      : "/>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView125"
+        android:layout_toRightOf="@id/textView125"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView23"
+        android:layout_marginLeft="80dp"
+        android:text="Delivery Charge  : "/>
+
+    <TextView
+        android:id="@+id/delivary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:layout_alignBaseline="@id/textView28"
+        android:layout_toRightOf="@id/textView28"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/paymentMethod"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView25"
+        android:layout_marginTop="-90dp"
+        android:text="PROCEED TO PAY"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

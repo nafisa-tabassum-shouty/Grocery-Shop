@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@drawable/grocery__1_">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/RegistrationLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Log in here."
+        android:textColor="#F60404"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+
+        ></TextView>
+
+    <EditText
+        android:id="@+id/Pin"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/RegistrationLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+
+        android:textColorHint="#F8F5F5"></EditText>
+
+    <EditText
+        android:id="@+id/Forget_pass_Email"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F5F5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Pin"
+        ></EditText>
+    <EditText
+        android:id="@+id/NewPassword"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FAF7F7"
+        android:textColorHint="#FDFCFC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Forget_pass_Email"></EditText>
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FAF7F7"
+        android:textColorHint="#FDFCFC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/NewPassword"
+        ></EditText>
+    <Button
+        android:id="@+id/ResetPass"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_bg"
+        android:text="SignUp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FA0505"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ConfirmPassword"
+        android:textColor="#FDFCFC"
+        ></Button>
+
+</RelativeLayout>

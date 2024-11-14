@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay"
+    tools:context=".CashOnDelivery">
+
+    <ImageView
+        android:id="@+id/Menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="355dp"
+        app:srcCompat="@drawable/baseline_menu_24"
+        />
+
+
+    <ImageView
+        android:id="@+id/backtopay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/back"
+        android:layout_marginLeft="4dp"
+        />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash On Delivery"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4CAF50" />
+
+    <EditText
+        android:id="@+id/HomeAdress"
+        android:layout_width="291dp"
+        android:layout_height="71dp"
+        android:textColor="@color/button"
+        android:layout_below="@id/textView21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/input_bg_black"
+        android:ems="10"
+
+        android:paddingLeft="15dp"
+        android:hint="Home Adress"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@id/HomeAdress"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/HomeAdress"
+        android:src="@drawable/maplogo" />
+    <EditText
+        android:id="@+id/Contact_Number"
+        android:hint="Contact Number"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/HomeAdress"
+        android:paddingLeft="15dp"
+
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:background="@drawable/input_bg_black"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/Contact_Number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/button"
+        android:text="Confirm Order"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

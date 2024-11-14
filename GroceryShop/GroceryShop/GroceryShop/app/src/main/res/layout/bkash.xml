@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay"
+    tools:context=".Bkash">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/back" />
+    <ImageView
+        android:id="@+id/Menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="355dp"
+        app:srcCompat="@drawable/baseline_menu_24"
+        />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/bkash" />
+
+    <EditText
+        android:id="@+id/HomeAdress"
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:textColor="@color/button"
+        android:layout_below="@id/imageView17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/input_bg_black"
+        android:ems="10"
+        android:paddingLeft="40dp"
+        android:hint="Bkash Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:hint="Pin Number"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/HomeAdress"
+        android:paddingLeft="40dp"
+
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:background="@drawable/input_bg_black"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/editTextText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#F1266B"
+        android:text="Confirm Order"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

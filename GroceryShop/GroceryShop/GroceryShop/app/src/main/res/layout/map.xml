@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map">
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:id="@+id/zoom_in_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:layout_marginTop="300dp"
+        android:text="+"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/zoom_out_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/zoom_in_button"
+        android:textSize="30dp"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/maptext"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/map_fragment"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Address "
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+
+        ></TextView>
+    <Button
+        android:id="@+id/confirm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/map_fragment"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Confrim Delivery Addreess" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <!-- Add your UI components here (e.g., buttons, text views, etc.) -->
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
